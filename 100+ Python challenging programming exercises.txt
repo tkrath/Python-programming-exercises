@@ -414,7 +414,7 @@ In case of input data being supplied to the question, it should be assumed to be
 
 Solution:
 values = raw_input()
-numbers = [x for x in values.split(",") if int(x)%2!=0]
+numbers = [int(x) for x in values.split(",") if int(x)%2!=0]
 print ",".join(numbers)
 #----------------------------------------#
 
